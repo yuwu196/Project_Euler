@@ -1,0 +1,12 @@
+sumofsquare=0
+squareofsum=0
+
+for i in range (1,101):
+    sumofsquare += i*i
+    squareofsum += i
+    
+
+squareofsum *= squareofsum
+print sumofsquare
+print squareofsum
+print squareofsum ¨C sumofsquare
