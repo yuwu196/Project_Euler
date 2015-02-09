@@ -1,0 +1,14 @@
+def lcm(p,q):
+	m = p * q
+	if not m: return 0
+	while True:
+		p %= q
+		if not p: return m // q
+		q %= p
+		if not q: return m // p
+		
+temp = 1
+for i in range(1,21):
+    temp = lcm(temp,i)
+
+print temp
